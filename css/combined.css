@@ -1043,7 +1043,7 @@ h6{
 .quote-icon i{margin:40% auto}
 ::selection{background:#F54F36;color:#fff}
 ::-moz-selection{background:#F54F36;color:#fff}
-#jpreBar,.patern span,.red,.nav-button span,.inner-overlay,.skillbar-bar,.serviseslider h3 span,
+#jpreBar,.patern span,.red,.nav-button span,.inner-overlay,.skillbar-bar,.serviceslider h3 span,
 .subscriptionForm input#submitButton,#loadingProgress,.planContainer .price,.planContainer .button a, .sepcolor,
 .skillbar-bar, .skillbar-bar-member,.member-social-list li a,#closeProject a,#ajaxpage a.lanch-project,#clientlist,
 #contact_form textarea:focus,#contact_form input:focus, .owl-theme .owl-controls .owl-page.active span,.owl-theme .owl-controls .clickable .owl-page:hover span,
@@ -1435,14 +1435,14 @@ h6{
 .member-social-list li a:hover{
 	border-radius:4px;background:#292929
 }
-#servises{
+#services{
 	
 	background-size:cover;
 	background-attachment:fixed;
 	background-position:top;
 	color:#fff
 }
-#servises .content{
+#services .content{
 	padding:100px 0 0  0
 }
 #service_boxes{
@@ -1456,16 +1456,16 @@ h6{
 	border-radius:4px;letter-spacing:1px;position:relative;overflow:hidden;cursor:pointer;color:#fff;
 	font-family:'Oswald',sans-serif;text-transform:uppercase
 }
-.serviseslider-holder{
+.serviceslider-holder{
 	position:relative;z-index:2;background:#fff;color:#292929;padding:100px 0
 }
-.serviseslider h3{
+.serviceslider h3{
 	font-size:24px;color:#ccc;margin-bottom:16px;font-family:'Oswald',sans-serif
 }
-.serviseslider h4{
+.serviceslider h4{
 	margin-top:10px;margin-bottom:6px
 }
-.serviseslider h3 span{
+.serviceslider h3 span{
 	width:5px;height:5px;display:inline-block;float:none;border-radius:100%;margin:6px 24px
 }
 .actser:before{
@@ -1869,17 +1869,17 @@ input#submitButton{border:none;width:25%;float:left;height:40px;cursor:pointer;m
 	.service_box,.animbox{width:220px;margin:5px auto}
 }
 @media only screen and  (max-width: 320px){
-	.serviseslider h3 span{display:none}
+	.serviceslider h3 span{display:none}
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2){
-	.rester{background-image:url(/images/raster@2x.png)}
-	.container p ,#contact_form label , .serviseslider h4 , .contact-details span, .footer p{font-size:1.1em;font-weight:400}
-	.serviseslider h4{font-weight:200}
+	/* .rester{background-image:url(/images/raster@2x.png)} */
+	.container p ,#contact_form label , .serviceslider h4 , .contact-details span, .footer p{font-size:1.1em;font-weight:400}
+	.serviceslider h4{font-weight:200}
 	.logo{height: 50px; width: 30%;}
 	.member-skils p{font-size:14px}
 	.bg-fx{background-attachment:scroll !important;-webkit-background-size:cover}}
 	::selection{background:#3399DB}::-moz-selection{background:#3399DB}
-	#jpreBar,.red,.nav-button span,.inner-overlay,.skillbar-bar,.serviseslider h3 span, .subscriptionForm input#submitButton,
+	#jpreBar,.red,.nav-button span,.inner-overlay,.skillbar-bar,.serviceslider h3 span, .subscriptionForm input#submitButton,
 	#loadingProgress,.planContainer .price,.planContainer .button a, .sepcolor,.skillbar-bar,.skillbar-bar-member,.member-social-list li a,
 	#closeProject a,#ajaxpage a.lanch-project,#clientlist,#contact_form textarea:focus,#contact_form input:focus, .owl-theme .owl-controls .owl-page.active span,
 	.owl-theme .owl-controls .clickable .owl-page:hover span,.slides-pagination a.current,.slides-pagination a:hover,.submit_btn:hover, .pagination a.current-page,
