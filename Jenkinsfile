@@ -10,6 +10,7 @@ pipeline {
         }
       }
       steps {
+         
         sh '''#!/bin/bash
                         freePort(){
                              while true
@@ -25,11 +26,12 @@ pipeline {
                         mkdir -p webapps/ainosoft/
                         cp -r website/* webapps/ainosoft/
                         ls webapps/ainosoft/
+                        pwd
                         freePortJetty=$(freePort)
                         myJettyName='ainosoft-site-jetty'
                         docker stop $myJettyName || true
                         docker rm $myJettyName || true
-                        docker run --name $myJettyName -d -p $freePortJetty:8080 --mount type=bind,source=webapps/,destination=/var/lib/jetty/webapps jetty  
+                        docker run --name $myJettyName -d -p $freePortJetty:8080 --mount type=bind,source=$(pwd)/webapps/,destination=/var/lib/jetty/webapps jetty  
                         ipAddr="$(ip -o route get to 8.8.8.8 | sed -n 's/.*src \\([0-9.]\\+\\).*/\\1/p')"
                         echo "Staged url - > http://$ipAddr:$freePortJetty/ainosoft"
         '''                
