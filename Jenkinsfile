@@ -32,8 +32,7 @@ pipeline {
                         docker rm $myJettyName || true
                         docker run --name $myJettyName -d -p $freePortJetty:8080 --mount type=bind,source=$(pwd)/webapps,destination=/var/lib/jetty/webapps jetty  
                         ipAddr="$(ip -o route get to 8.8.8.8 | sed -n 's/.*src \\([0-9.]\\+\\).*/\\1/p')"
-                        echo "Staged url - > http://$ipAddr:$freePortJetty/ainosoft"
-        '''                
+                        echo "Staged url - > http://$ipAddr:$freePortJetty/ainosoft"'''                
       }
     }
   }
