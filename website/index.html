@@ -2,702 +2,786 @@
 <html lang="en">
 
 <head>
-	<!--=============== basic  ===============-->
-	<meta charset="UTF-8">
-	<title>AINOSOFT</title>
-	<link rel="icon" type="image/png" href="images/bg/ainoflag.jpg" />
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--=============== basic  ===============-->
+    <meta charset="UTF-8">
+    <title>AINOSOFT</title>
+    <link rel="icon" type="image/png" href="images/bg/ainoflag.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<!--=============== css  ===============-->
-	<link type="text/css" rel="stylesheet" href="css/combined.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--=============== css  ===============-->
+    <link type="text/css" rel="stylesheet" href="css/combined.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	<!--=============== fonts  ===============-->
-	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400,300' rel='stylesheet'
-		type='text/css'>
+    <!--=============== fonts  ===============-->
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
+    <!--=============== modernizr  ===============-->
+    <script src="js/modernizr.custom.97074.js"></script>
 
-	<!--=============== modernizr  ===============-->
-	<script src="js/modernizr.custom.97074.js"></script>
+    <!--=============== Basic css  ===============-->
+    <style type="text/css">
+        .box a img.respimg {
+            width: 101%;
+        }
+        
+        .member-box {
+            vertical-align: top;
+        }
+        
+        .service_box.actser a {
+            color: #909090;
+            background: #fff;
+        }
+        
+        .owl-theme .owl-controls .owl-page.active span {
+            background: rgba(0, 0, 0, 0.5)
+        }
+        
+        .slides-pagination {
+            display: none;
+        }
+        
+        #team .member-photo {
+            width: 70%;
+        }
+        
+        #portfolio .content {
+            background: #D3D3D3 !important;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .owl-controls.clickable {
+                display: none;
+            }
+        }
+    </style>
 
-	<!--=============== Basic css  ===============-->
-	<style type="text/css">
-		.box a img.respimg {
-			width: 101%;
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style>
+		* {box-sizing: border-box}
+		body {font-family: Verdana, sans-serif; margin:0}
+		.mySlides {display: none}
+		img {vertical-align: middle;}
+		
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 100%;
+		  position: relative;
+		  margin: auto;
 		}
 
-		.member-box {
-			vertical-align: top;
+		.w3-display-left{
+            font-size: 20px;
+			color: white;
+  			font-weight: bold;
+		  	transition: 0.6s ease;
+  			border-radius: 0 3px 3px 0;
+  			user-select: none;
 		}
-
-		.service_box.actser a {
-			color: #909090;
-			background: #fff;
+		.w3-display-right{
+			font-size: 20px;
+			color: white;
+  			font-weight: bold;
+		  	transition: 0.6s ease;
+  			border-radius: 0 3px 3px 0;
+  			user-select: none
 		}
-
-		.owl-theme .owl-controls .owl-page.active span {
-			background: rgba(0, 0, 0, 0.5)
+		
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
 		}
-
-		.slides-pagination {
-			display: none;
+		
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
 		}
-
-		#team .member-photo {
-			width: 70%;
+		
+		.active, .dot:hover {
+		  background-color: #717171;
 		}
-
-		#portfolio .content {
-			background: #D3D3D3 !important;
+		
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
 		}
-
-		@media screen and (max-width: 768px) {
-			.owl-controls.clickable {
-				display: none;
-			}
+		
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
 		}
-	</style>
+		
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		</style>
 </head>
 
 <body>
-	<div id="main">
-		<div class="wrapper">
-			<!--=============== intro slide ===============-->
-			<div id="intro">
+    <div id="main">
+        <div class="wrapper">
+            <!--=============== intro slide ===============-->
+						<div class="slideshow-container">
 
-
-				<div id="intro-carusel" class="owl-carousel">
-
-					<div class="item ">
-						<img src="images/bg/intro1.png" class="respimg " alt="" title="">
-					</div>
-
-					<div class="item">
-						<img src="images/bg/intro2.png" class="respimg " alt="" title="">
-					</div>
-					<div class="item">
-						<img src="images/bg/intro3.png" class="respimg" alt="" title="">
-					</div>
-					<div class="item">
-						<img src="images/bg/intro4.png" class="respimg " alt="" title="">
-					</div>
-					<div class="item">
-						<img src="images/bg/background.png" class="respimg " alt="" title="">
-					</div>
-
-				</div>
-
-				<a href="#about" class="start" style="color:white">MORE <br><i
-						class="fa fa-angle-double-down fa-3x"></i> </a>
-
-			</div>
-
-			<!--=============== navigation ===============-->
-
-			<div class="sections">
-				<div class="navigation">
-					<div class="nav-button transition">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					<div class="inner">
-						<div style="float:left" class="logo">
-							<img class="image-logo" src="images/bg/logo.png">
-						</div>
-						<div class="link-holder" id="nav">
-							<ul>
-								<li class="current nav-item"><a href="#about" class="nav-link font-up">About Us</a></li>
-								<li class="nav-item"><a href="#services" class="nav-link font-up">Services</a></li>
-								<li class="nav-item"><a href="#clientlist" class="nav-link font-up">Clients</a></li>
-								<li class="nav-item"><a href="#portfolio" class="nav-link font-up">Portfolio</a></li>
-								<li class="nav-item"><a href="#technologies" class="nav-link font-up">Technologies</a>
-								</li>
-								<li class="nav-item"><a href="#prices" class="nav-link font-up">Careers</a></li>
-								<li class="nav-item"><a href="#contacts" class="nav-link font-up">Contact Us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--=============== section navigation end ===============-->
-
-			<!--=============== section about ===============-->
-
-			<div id="about" class="sections ws">
-				<div class="content">
-					<div class="container">
-						<h3 class="sections-head">Who we are</h3>
-						<h2>About us</h2>
-						<div id="owl-demo" class="owl-carousel">
-							<!-- slide 1-->
-							<div class="item fist-slide">
-								<div class="small-separator"></div>
-								<p>We are a group of experienced engineers and designers in love with building
-									applications of diverse nature including web and mobile. We value not only the look
-									of what we build but even more the process we follow, architecture we use, designs
-									we choose, implement. For us building applications is a scientific art achieved
-									through thorough use of Agile practices. We participate in all phases of software
-									development lifecycle and specialize in product development. </p>
+							<div class="mySlides fade">
+							  <div class="numbertext">1 / 5</div>
+							  <img src="images/bg/intro1.png" style="width:100%">
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--===============  section about end ===============-->
+							
+							<div class="mySlides fade">
+							  <div class="numbertext">2 / 5</div>
+							  <img src="images/bg/intro2.png" style="width:100%">
+							</div>
+							
+							<div class="mySlides fade">
+							  <div class="numbertext">3 / 5</div>
+							  <img src="images/bg/intro3.png" style="width:100%">
+							</div>
 
-			<!--=============== section facts ===============-->
-			<div id="facts" class="sections bg-fx">
-				<div class="content">
-					<div class="container">
-						<h3 class="sections-head">we build</h3>
-						<div class="small-separator"></div>
+							<div class="mySlides fade">
+								<div class="numbertext">4 / 5</div>
+								<img src="images/bg/intro4.png" style="width:100%">
+							</div>
+							
+							<div class="mySlides fade">
+								<div class="numbertext">5 / 5</div>
+								<img src="images/bg/background.png" style="width:100%">
+							</div>
+							<button class="w3-button w3-display-left" onclick="plusSlides(-1)">&#10094;</button>
+                            <button class="w3-button w3-display-right" onclick="plusSlides(1)">&#10095;</button>
+						</div>
 						<br>
-						<ul>
-							<li class="grid-2">
-								<h6><i class="fa fa-mobile-phone fa-2x"></i><span>Fantastic Mobile Apps</span></h6>
-							</li>
-							<li class="grid-2">
-								<h6><i class="fa fa-laptop fa-2x"></i><span>Fast Web Apps</span></h6>
-							</li>
-							<li class="grid-2">
-								<h6><i class="fa fa-users fa-2x"></i><span>Amazing Teams</span></h6>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!--===============  section facts end ===============-->
 
-
-
-			<!--=============== section services ===============-->
-
-			<div id="services" class="sections bg-fx">
-
-				<div class="content">
-					<div class="quote-icon"><i class="fa fa-cogs"></i></div>
-					<div class="rester"></div>
-					<div class="rester grey"></div>
-					<div class="container">
-						<h3 class="sections-head white">What we do</h3>
-						<h2 class="white">Services</h2>
-						<div class="small-separator ws"></div>
-						<p style="color: white;">We offer various services needed to build a software product in
-							entirety. We engage clients and other stakeholders at any required phase, be it
-							conceptualization to deployment and support. We engage with clients using multiple
-							innovative and flexible business models that meet client needs in total.</p>
-						<div class="row" id="service_boxes">
-							<div class="service_box animaper">
-								<a name="0" class="animbox">Startup <br>partnership</a>
-							</div>
-							<div class="service_box actser animaper">
-								<a name="1" class="animbox">Resource <br> augmentation</a>
-							</div>
-							<div class="service_box animaper">
-								<a name="2" class="animbox">Fully managed <br>solution delivery</a>
-							</div>
+						<div style="text-align:center">
+  							<span class="dot" onclick="currentSlide(1)"></span> 
+  							<span class="dot" onclick="currentSlide(2)"></span> 
+  							<span class="dot" onclick="currentSlide(3)"></span>
+							<span class="dot" onclick="currentSlide(4)"></span>
+							<span class="dot" onclick="currentSlide(5)"></span> 
 						</div>
-					</div>
-
-					<div class="serviceslider-holder no-nav">
-						<div class="container">
-							<div class="serviceslider">
-
-								<ul class="slides">
-									<!-- fist-slide -->
-									<li>
-										<div class="icon-holder">
-											<i class="fa fa-sitemap fa-2x"></i>
-										</div>
-										<h3>Startup partnership</h3>
-										<p>We specialize in providing unique engagement models to address startup needs.
-											Since each startup encounters unique business environments, they also need
-											unique engagement models to see their business through to success. Contact
-											us to understand what we can offer you using our site chat feature or over a
-											phone call for a quick response.</p>
-									</li>
-									<!-- second-slide -->
-									<li>
-										<div class="icon-holder">
-											<i class="fa fa-male fa-2x"></i>
-										</div>
-										<h3>Resource augmentation</h3>
-										<p>Augment and strengthen your existing team using our colleagues experienced at
-											effective remote collaboration. We have extensive experience working with
-											remote clients located in varied time zones using a wide array of
-											collaboration and communication tools.</p>
-									</li>
-									<!-- third-slide -->
-									<li>
-										<div class="icon-holder">
-											<i class="fa fa-truck fa-2x"></i>
-										</div>
-										<h3>Fully managed solution delivery</h3>
-										<p>Are you looking for minimal involvement and timely deliveries. This model
-											could be for you. We take complete ownership of end to end management of
-											your requirements and work towards mutually agreed timely deliveries</p>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--=============== section services end ===============-->
-
-			<!--=============== section clients ===============-->
-			<div id="clientlist" class="no-nav">
-				<div class="content">
-					<div class="quote-icon"><i class="fa fa-users"></i></div>
-
-					<div class="client-carusel-holder">
-						<div class="container">
-							<br /><br /><br /><br />
-
-							<h3 class="sections-head white">For who we do it</h3>
-							<h2 class="white">Clients</h2>
-							<div class="small-separator ws"></div>
-							<div id="client-carusel" class="owl-carousel">
-
-								<div class="item">
-									<img src="images/clients/c1.png" class="respimg" alt="" title="">
-								</div>
-
-								<div class="item">
-									<img src="images/clients/c2.png" class="respimg" alt="" title="">
-								</div>
-
-								<div class="item">
-									<img src="images/clients/c3.png" class="respimg" alt="" title="">
-								</div>
-
-								<div class="item">
-									<img src="images/clients/c4.png" class="respimg" alt="" title="">
-								</div>
-
-								<div class="item">
-									<img src="images/clients/c5.png" class="respimg" alt="" title="">
-								</div>
-
-								<div class="item">
-									<img src="images/clients/c6.png" class="respimg" alt="" title="">
-								</div>
-
-								<div class="item">
-									<img src="images/clients/c7.png" class="respimg" alt="" title="">
-								</div>
-
-								<div class="item">
-									<img src="images/clients/c8.png" class="respimg" alt="" title="">
-								</div>
-
-							</div>
-						</div>
-						<br /><br /><br /><br />
-					</div>
-				</div>
-			</div>
-			<!--===============  section clients end ===============-->
-
-
-			<!--=============== section portfolio ===============-->
-			<div id="portfolio" class="sections ws">
-				<div class="content">
-					<div class="quote-icon"><i class="fa fa-suitcase"></i></div>
-					<div class="container grid1">
-						<h3 class="sections-head">Portfolio</h3>
-						<h2>Our work</h2>
-						<div class="small-separator"></div>
-						<p>We let our work do that talking. Below is a sample of our work</p>
-					</div>
-
-					<!-- portfolio filters -->
-					<div id="options" class="clear">
-						<ul id="filters" class="option-set" data-option-key="filter">
-							<li class="filter actcat" data-filter="all">All</li>
-							<li class="filter" data-filter="category_1">Web </li>
-							<li class="filter" data-filter="category_2">Mobile</li>
-						</ul>
-					</div>
-
-					<!-- Projects links -->
-					<div class="aih">
-						<ul id="folio_container" class="grid-full animaper">
-
-							<!-- web 1 project -->
-							<li class="box  mix category_1 mix_all">
-								<a>
-									<img src="images/folio/default.png" data-src="images/folio/w1.png" class="respimg"
-										alt="" title="">
-									<div class="folio-name clear">
-										<div class="folio-overlay">
-											<span class="overlay red"></span>
-											<h4>Web : ReJoyos</h4>
-											<h6>Web</h6>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<!-- web 2 project -->
-							<li class="box  mix category_1 mix_all">
-								<a>
-									<img src="images/folio/default.png" data-src="images/folio/w2.png" class="respimg"
-										alt="" title="">
-									<div class="folio-name clear">
-										<div class="folio-overlay">
-											<span class="overlay red"></span>
-											<h4>Infozymes</h4>
-											<h6>Web</h6>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<!-- web 3 project -->
-							<li class="box  mix category_1 mix_all">
-								<a>
-									<img src="images/folio/default.png" data-src="images/folio/w3.png" class="respimg"
-										alt="" title="">
-									<div class="folio-name clear">
-										<div class="folio-overlay">
-											<span class="overlay red"></span>
-											<h4>Infozymes</h4>
-											<h6>Web</h6>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<!-- web 4 project -->
-							<li class="box  mix category_1 mix_all">
-								<a>
-									<img src="images/folio/default.png" data-src="images/folio/w4.png" class="respimg"
-										alt="" title="">
-									<div class="folio-name clear">
-										<div class="folio-overlay">
-											<span class="overlay red"></span>
-											<h4>Appops</h4>
-											<h6>Web</h6>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<!--web 5 project -->
-							<li class="box  mix category_1 mix_all">
-								<a>
-									<img src="images/folio/default.png" data-src="images/folio/w5.png" class="respimg"
-										alt="" title="">
-									<div class="folio-name clear">
-										<div class="folio-overlay">
-											<span class="overlay red"></span>
-											<h4>Engile</h4>
-											<h6>Web</h6>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<!--web 6 project -->
-							<li class="box  mix category_1 mix_all">
-								<a>
-									<img src="images/folio/default.png" data-src="images/folio/w6.png" class="respimg"
-										alt="" title="">
-									<div class="folio-name clear">
-										<div class="folio-overlay">
-											<span class="overlay red"></span>
-											<h4>Competitive Analytics</h4>
-											<h6>Web</h6>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<!--Mobile 1 project -->
-							<li class="box  mix category_2 mix_all">
-								<a>
-									<img src="images/folio/default.png" data-src="images/folio/m1.png" class="respimg"
-										alt="" title="">
-									<div class="folio-name clear">
-										<div class="folio-overlay">
-											<span class="overlay red"></span>
-											<h4>Mobile : ReJoyos</h4>
-											<h6>Mobile</h6>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<!--Mobile 2 project -->
-							<li class="box  mix category_2 mix_all">
-								<a>
-									<img src="images/folio/default.png" data-src="images/folio/m2.png" class="respimg"
-										alt="" title="">
-									<div class="folio-name clear">
-										<div class="folio-overlay">
-											<span class="overlay red"></span>
-											<h4></h4>
-											<h6>Mobile</h6>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<!--Mobile 3 project -->
-							<li class="box  mix category_2 mix_all">
-								<a>
-									<img src="images/folio/default.png" data-src="images/folio/m3.png" class="respimg"
-										alt="" title="">
-									<div class="folio-name clear">
-										<div class="folio-overlay">
-											<span class="overlay red"></span>
-											<h4></h4>
-											<h6>Mobile</h6>
-										</div>
-									</div>
-								</a>
-							</li>
-
-							<!--Mobile 4 project -->
-							<li class="box  mix category_2 mix_all">
-								<a>
-									<img src="images/folio/default.png" data-src="images/folio/m4.png" class="respimg"
-										alt="" title="">
-									<div class="folio-name clear">
-										<div class="folio-overlay">
-											<span class="overlay red"></span>
-											<h4>Silomen</h4>
-											<h6>Mobile</h6>
-										</div>
-									</div>
-								</a>
-							</li>
-
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!--=============== section portfolio end ===============-->
-
-			<!--=============== section Technologies ===============-->
-			<div id="technologies" class="sections bg-fx">
-				<div class="content">
-					<div class="quote-icon"><i class="fa fa-code"></i></div>
-					<div class="rester"></div>
-					<div class="rester grey"></div>
-					<div class="container">
-						<div class="clear"></div>
-						<br /><br /><br /><br />
-						<h3 class="sections-head white">What we use</h3>
-						<h2 class="white">Technologies</h2>
-						<div class="small-separator ws"></div>
-						<div id="technologies-carusel" class="owl-carousel">
-
-							<div class="item">
-								<img src="images/technologies/t1.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t2.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t3.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t4.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t5.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t6.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t7.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t8.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t9.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t10.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t11.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t12.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t13.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t14.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t15.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t16.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t17.png" class="respimg" alt="" title="">
-							</div>
-
-							<div class="item">
-								<img src="images/technologies/t18.png" class="respimg" alt="" title="">
-							</div>
-
-						</div>
-						<br /><br /><br /><br />
-					</div>
-				</div>
-			</div>
-			<!--=============== section Technologies end ===============-->
-
-			<!--=============== section careers ===============-->
-			<div id="prices" class="sections ws">
-				<div class="content">
-					<div class="quote-icon"><i class="fa fa-users"></i></div>
-					<div class="container">
-						<h3 class="sections-head">Work with us</h3>
-						<h2>Careers</h2>
-						<div class="small-separator"></div>
-						<p>We value quality of life for any individual engaged with us at a premium and we believe in
-							the idiom of a happy individual is a productive worker. We are always open to engage and
-							hire individuals with a love for building quality applications, an attitude of customer
-							first with strong ownership.</p>
-						<p>Along with a super charged atmosphere that promotes and values individual freedom and team
-							effort, we offer industry leading compensation. Here too if you are located near our clients
-							and have unique skills to offer we can open up unique engagement models that are rare in the
-							industry.</p>
-						<p>Find this exciting enough ? - please contact us with a brief introduction of yourself and
-							your suitability to our business using our site chat feature.</p>
-					</div>
-				</div>
-			</div>
-			<!--===============  section prising end ===============-->
-
-			<!--=============== section contacts ===============-->
-			<div id="contacts" class="sections">
-				<div class="content">
-					<div class="quote-icon to-top">
-						<i onclick="topFunction()" class="fa fa-angle-up"></i>
-					</div>
-					<div class="container">
-
-						<div class="contact-details">
-							<div class="grid-2">
-								<div class="smallicon animaper phone"><i class="fa fa-home fa-3x"></i></div>
-								<span>1 Hallidie Plaza 2nd Floor, <br> CA 94102 <br> San Francisco
-
-									<!--	<br> <i class="fa fa-mobile "></i> &nbsp; +1 415 481 4833 -->
-
-									<br> <i class="fa fa-mobile "></i> &nbsp;
-
-
-								</span>
-							</div>
-
-							<div class="grid-2 right-address">
-								<div class="smallicon animaper showmap mnv "><i class="fa fa-home fa-3x"></i></div>
-								<span>3rd Floor, Gulmohar Court, Lane B, Koregaon Park, <br> Pune, Maharashtra 411001
-									<br> India
-
-									<br> <i class="fa fa-mobile "></i> &nbsp; +91 9860003361
-
-
-								</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- footer -->
-					<div class="footer clear">
-
-						<p>AinoSoft © 2014 - 2019 All rights reserved.</p>
-
-						<div class="small-separator ws"></div>
-					</div>
-					<!--footer end-->
-				</div>
-			</div>
-			<!--=============== section contacts end ===============-->
-		</div>
-		<!--=============== wrapper end ===============-->
-	</div>
-	<!--=============== main end ===============-->
-
-
-	<!--=============== javascript - needed by combined.js below ===============-->
-	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
-
-	<!--=============== javascript - wheel scroll support #erroneous needs fixing #23 ===============-->
-
-	<script type="text/javascript" src="js/combined.js"></script>
-
-	<!--Start of Zendesk Chat Script-->
-	<script type="text/javascript">
-		window.$zopim || (function (d, s) {
-			var z = $zopim = function (c) { z._.push(c) }, $ = z.s = d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) { z.set._.push(o) }; z._ = []; z.set._ = []; $.async = !0; $.setAttribute("charset", "utf-8");
-			$.src = "https://v2.zopim.com/?4nGgkcgcwXT1xaX652O6enjzDtn1NxK8"; z.t = +new Date; $.type = "text/javascript"; e.parentNode.insertBefore($, e)
-		})(document, "script");
-	</script>
-	<!--End of Zendesk Chat Script-->
-
-
-	<!--=============== javascript - google analytics ===============-->
+						<a href="#about" class="start" style="color:white">MORE <br><i class="fa fa-angle-double-down fa-3x"></i> </a>
+						
+
+            <!--=============== navigation ===============-->
+            <div class="sections">
+                <div class="navigation">
+                    <div class="nav-button transition">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="inner">
+                        <div style="float:left" class="logo">
+                            <img class="image-logo" src="images/bg/logo.png">
+                        </div>
+                        <div class="link-holder" id="nav">
+                            <ul class="nav">
+                                <li id="link-football class="nav-item"><a href="#about" class="nav-link ">About Us</a></li>
+                                <li class="nav-item"><a href="#servises" class="nav-link">Services</a></li>
+                                <li class="nav-item"><a href="#clientlist" class="nav-link">Clients</a></li>
+                                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                                <li class="nav-item"><a href="#technologies" class="nav-link">Technologies</a></li>
+                                <li class="nav-item"><a href="#prices" class="nav-link">Careers</a></li>
+                                <li class="nav-item"><a href="#contacts" class="nav-link">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=============== section navigation end ===============-->
+
+            <!--=============== section about ===============-->
+            <div id="about" class="sections ws">
+                <div class="content">
+                    <div class="container">
+                        <h3 class="sections-head">Who we are</h3>
+                        <h2>About us</h2>
+                        <div id="owl-demo" class="owl-carousel">
+                            <!-- slide 1-->
+                            <div class="item fist-slide">
+                                <div class="small-separator"></div>
+                                <p>We are a group of experienced engineers and designers in love with building applications of diverse nature including web and mobile. We value not only the look of what we build but even more the process we follow, architecture
+                                    we use, designs we choose, implement. For us building applications is a scientific art achieved through thorough use of Agile practices. We participate in all phases of software development lifecycle and specialize
+                                    in product development. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--===============  section about end ===============-->
+
+            <!--=============== section facts ===============-->
+            <div id="facts" class="sections bg-fx">
+                <div class="content">
+                    <div class="container">
+                        <h3 class="sections-head">we build</h3>
+                        <div class="small-separator"></div>
+                        <br>
+                        <ul>
+                            <li class="grid-2">
+                                <h6><i class="fa fa-mobile-phone fa-2x"></i><span>Fantastic Mobile Apps</span></h6>
+                            </li>
+                            <li class="grid-2">
+                                <h6><i class="fa fa-laptop fa-2x"></i><span>Fast Web Apps</span></h6>
+                            </li>
+                            <li class="grid-2">
+                                <h6><i class="fa fa-users fa-2x"></i><span>Amazing Teams</span></h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--===============  section facts end ===============-->
+
+
+
+            <!--=============== section services ===============-->
+            <div id="servises" class="sections bg-fx">
+                <div class="content">
+                    <div class="quote-icon"><i class="fa fa-cogs"></i></div>
+                    <div class="rester"></div>
+                    <div class="rester grey"></div>
+                    <div class="container">
+                        <h3 class="sections-head white">What we do</h3>
+                        <h2 class="white">Services</h2>
+                        <div class="small-separator ws"></div>
+                        <p style="color: white;">We offer various services needed to build a software product in entirety. We engage clients and other stakeholders at any required phase, be it conceptualization to deployment and support. We engage with clients using multiple
+                            innovative and flexible business models that meet client needs in total.</p>
+                        <div class="row" id="service_boxes">
+                            <div class="service_box animaper">
+                                <a name="0" class="animbox">Startup <br>partnership</a>
+                            </div>
+                            <div class="service_box actser animaper">
+                                <a name="1" class="animbox">Resource <br> augmentation</a>
+                            </div>
+                            <div class="service_box animaper">
+                                <a name="2" class="animbox">Fully managed <br>solution delivery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviseslider-holder no-nav">
+                        <div class="container">
+                            <div class="serviseslider">
+                                <ul class="slides">
+                                    <!-- fist-slide -->
+                                    <li>
+                                        <div class="icon-holder">
+                                            <i class="fa fa-sitemap fa-2x"></i>
+                                        </div>
+                                        <h3>Startup partnership</h3>
+                                        <p>We specialize in providing unique engagement models to address startup needs. Since each startup encounters unique business environments, they also need unique engagement models to see their business through to
+                                            success. Contact us to understand what we can offer you using our site chat feature or over a phone call for a quick response.</p>
+                                    </li>
+                                    <!-- second-slide -->
+                                    <li>
+                                        <div class="icon-holder">
+                                            <i class="fa fa-male fa-2x"></i>
+                                        </div>
+                                        <h3>Resource augmentation</h3>
+                                        <p>Augment and strengthen your existing team using our colleagues experienced at effective remote collaboration. We have extensive experience working with remote clients located in varied time zones using a wide array
+                                            of collaboration and communication tools.</p>
+                                    </li>
+                                    <!-- third-slide -->
+                                    <li>
+                                        <div class="icon-holder">
+                                            <i class="fa fa-truck fa-2x"></i>
+                                        </div>
+                                        <h3>Fully managed solution delivery</h3>
+                                        <p>Are you looking for minimal involvement and timely deliveries. This model could be for you. We take complete ownership of end to end management of your requirements and work towards mutually agreed timely deliveries</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=============== section services end ===============-->
+
+            <!--=============== section clients ===============-->
+            <div id="clientlist" class="no-nav">
+                <div class="content">
+                    <div class="quote-icon"><i class="fa fa-users"></i></div>
+
+                    <div class="client-carusel-holder">
+                        <div class="container">
+                            <br/><br/><br/><br/>
+
+                            <h3 class="sections-head white">For who we do it</h3>
+                            <h2 class="white">Clients</h2>
+                            <div class="small-separator ws"></div>
+                            <div id="client-carusel" class="owl-carousel">
+
+                                <div class="item">
+                                    <img src="images/clients/c1.png" class="respimg" alt="" title="">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/clients/c2.png" class="respimg" alt="" title="">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/clients/c3.png" class="respimg" alt="" title="">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/clients/c4.png" class="respimg" alt="" title="">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/clients/c5.png" class="respimg" alt="" title="">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/clients/c6.png" class="respimg" alt="" title="">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/clients/c7.png" class="respimg" alt="" title="">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/clients/c8.png" class="respimg" alt="" title="">
+                                </div>
+
+                            </div>
+                        </div>
+                        <br/><br/><br/><br/>
+                    </div>
+                </div>
+            </div>
+            <!--===============  section clients end ===============-->
+
+
+            <!--=============== section portfolio ===============-->
+            <div id="portfolio" class="sections ws">
+                <div class="content">
+                    <div class="quote-icon"><i class="fa fa-suitcase"></i></div>
+                    <div class="container grid1">
+                        <h3 class="sections-head">Portfolio</h3>
+                        <h2>Our work</h2>
+                        <div class="small-separator"></div>
+                        <p>We let our work do that talking. Below is a sample of our work</p>
+                    </div>
+
+                    <!-- portfolio filters -->
+                    <div id="options" class="clear">
+                        <ul id="filters" class="option-set" data-option-key="filter">
+                            <li class="filter actcat" data-filter="all">All</li>
+                            <li class="filter" data-filter="category_1">Web </li>
+                            <li class="filter" data-filter="category_2">Mobile</li>
+                        </ul>
+                    </div>
+
+                    <!-- Projects links -->
+                    <div class="aih">
+                        <ul id="folio_container" class="grid-full animaper">
+
+                            <!-- web 1 project -->
+                            <li class="box  mix category_1 mix_all">
+                                <a>
+                                    <img src="images/folio/default.png" data-src="images/folio/w1.png" class="respimg" alt="" title="">
+                                    <div class="folio-name clear">
+                                        <div class="folio-overlay">
+                                            <span class="overlay red"></span>
+                                            <h4>Web : ReJoyos</h4>
+                                            <h6>Web</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!-- web 2 project -->
+                            <li class="box  mix category_1 mix_all">
+                                <a>
+                                    <img src="images/folio/default.png" data-src="images/folio/w2.png" class="respimg" alt="" title="">
+                                    <div class="folio-name clear">
+                                        <div class="folio-overlay">
+                                            <span class="overlay red"></span>
+                                            <h4>Infozymes</h4>
+                                            <h6>Web</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!-- web 3 project -->
+                            <li class="box  mix category_1 mix_all">
+                                <a>
+                                    <img src="images/folio/default.png" data-src="images/folio/w3.png" class="respimg" alt="" title="">
+                                    <div class="folio-name clear">
+                                        <div class="folio-overlay">
+                                            <span class="overlay red"></span>
+                                            <h4>Infozymes</h4>
+                                            <h6>Web</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!-- web 4 project -->
+                            <li class="box  mix category_1 mix_all">
+                                <a>
+                                    <img src="images/folio/default.png" data-src="images/folio/w4.png" class="respimg" alt="" title="">
+                                    <div class="folio-name clear">
+                                        <div class="folio-overlay">
+                                            <span class="overlay red"></span>
+                                            <h4>Appops</h4>
+                                            <h6>Web</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!--web 5 project -->
+                            <li class="box  mix category_1 mix_all">
+                                <a>
+                                    <img src="images/folio/default.png" data-src="images/folio/w5.png" class="respimg" alt="" title="">
+                                    <div class="folio-name clear">
+                                        <div class="folio-overlay">
+                                            <span class="overlay red"></span>
+                                            <h4>Engile</h4>
+                                            <h6>Web</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!--web 6 project -->
+                            <li class="box  mix category_1 mix_all">
+                                <a>
+                                    <img src="images/folio/default.png" data-src="images/folio/w6.png" class="respimg" alt="" title="">
+                                    <div class="folio-name clear">
+                                        <div class="folio-overlay">
+                                            <span class="overlay red"></span>
+                                            <h4>Competitive Analytics</h4>
+                                            <h6>Web</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!--Mobile 1 project -->
+                            <li class="box  mix category_2 mix_all">
+                                <a>
+                                    <img src="images/folio/default.png" data-src="images/folio/m1.png" class="respimg" alt="" title="">
+                                    <div class="folio-name clear">
+                                        <div class="folio-overlay">
+                                            <span class="overlay red"></span>
+                                            <h4>Mobile : ReJoyos</h4>
+                                            <h6>Mobile</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!--Mobile 2 project -->
+                            <li class="box  mix category_2 mix_all">
+                                <a>
+                                    <img src="images/folio/default.png" data-src="images/folio/m2.png" class="respimg" alt="" title="">
+                                    <div class="folio-name clear">
+                                        <div class="folio-overlay">
+                                            <span class="overlay red"></span>
+                                            <h4></h4>
+                                            <h6>Mobile</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!--Mobile 3 project -->
+                            <li class="box  mix category_2 mix_all">
+                                <a>
+                                    <img src="images/folio/default.png" data-src="images/folio/m3.png" class="respimg" alt="" title="">
+                                    <div class="folio-name clear">
+                                        <div class="folio-overlay">
+                                            <span class="overlay red"></span>
+                                            <h4></h4>
+                                            <h6>Mobile</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!--Mobile 4 project -->
+                            <li class="box  mix category_2 mix_all">
+                                <a>
+                                    <img src="images/folio/default.png" data-src="images/folio/m4.png" class="respimg" alt="" title="">
+                                    <div class="folio-name clear">
+                                        <div class="folio-overlay">
+                                            <span class="overlay red"></span>
+                                            <h4>Silomen</h4>
+                                            <h6>Mobile</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--=============== section portfolio end ===============-->
+
+            <!--=============== section Technologies ===============-->
+            <div id="technologies" class="sections bg-fx">
+                <div class="content">
+                    <div class="quote-icon"><i class="fa fa-code"></i></div>
+                    <div class="rester"></div>
+                    <div class="rester grey"></div>
+                    <div class="container">
+                        <div class="clear"></div>
+                        <br/><br/><br/><br/>
+                        <h3 class="sections-head white">What we use</h3>
+                        <h2 class="white">Technologies</h2>
+                        <div class="small-separator ws"></div>
+                        <div id="technologies-carusel" class="owl-carousel">
+
+                            <div class="item">
+                                <img src="images/technologies/t1.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t2.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t3.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t4.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t5.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t6.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t7.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t8.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t9.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t10.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t11.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t12.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t13.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t14.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t15.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t16.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t17.png" class="respimg" alt="" title="">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/technologies/t18.png" class="respimg" alt="" title="">
+                            </div>
+
+                        </div>
+                        <br/><br/><br/><br/>
+                    </div>
+                </div>
+            </div>
+            <!--=============== section Technologies end ===============-->
+
+            <!--=============== section careers ===============-->
+            <div id="prices" class="sections ws">
+                <div class="content">
+                    <div class="quote-icon"><i class="fa fa-users"></i></div>
+                    <div class="container">
+                        <h3 class="sections-head">Work with us</h3>
+                        <h2>Careers</h2>
+                        <div class="small-separator"></div>
+                        <p>We value quality of life for any individual engaged with us at a premium and we believe in the idiom of a happy individual is a productive worker. We are always open to engage and hire individuals with a love for building quality
+                            applications, an attitude of customer first with strong ownership.</p>
+                        <p>Along with a super charged atmosphere that promotes and values individual freedom and team effort, we offer industry leading compensation. Here too if you are located near our clients and have unique skills to offer we can open
+                            up unique engagement models that are rare in the industry.</p>
+                        <p>Find this exciting enough ? - please contact us with a brief introduction of yourself and your suitability to our business using our site chat feature.</p>
+                    </div>
+                </div>
+            </div>
+            <!--===============  section prising end ===============-->
+
+            <!--=============== section contacts ===============-->
+            <div id="contacts" class="sections">
+                <div class="content">
+                    <div class="quote-icon to-top">
+                        <i onclick="topFunction()" id="myBtn" class="fa fa-angle-up"></i>
+                    </div>
+                    <div class="container">
+
+                        <div class="contact-details">
+                            <div class="grid-2">
+                                <div class="smallicon animaper phone"><i class="fa fa-home fa-3x"></i></div>
+                                <span>1 Hallidie Plaza 2nd Floor, <br> CA 94102 <br> San Francisco 
+										<br> <i class="fa fa-mobile "></i> &nbsp; +1 415 481 4833
+										
+									</span>
+                            </div>
+
+                            <div class="grid-2 right-address">
+                                <div class="smallicon animaper showmap mnv "><i class="fa fa-home fa-3x"></i></div>
+                                <span>3rd Floor, Gulmohar Court, Lane B, Koregaon Park, <br> Pune, Maharashtra 411001 <br> India 
+										<br> <i class="fa fa-mobile "></i> &nbsp; +91 9359232592
+										
+									</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer clear">
+                        <p>AinoSoft © 2014 - 2021 All rights reserved.</p>
+                        <div class="small-separator ws"></div>
+                    </div>
+                    <!--footer end-->
+                </div>
+            </div>
+            <!--=============== section contacts end ===============-->
+        </div>
+        <!--=============== wrapper end ===============-->
+    </div>
+    <!--=============== main end ===============-->
+
+    <!--=============== javascript ===============-->
+    <script type="text/javascript" src="js/combined.js"></script>
+
+    <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+        window.$zopim || (function(d, s) {
+            var z = $zopim = function(c) {
+                    z._.push(c)
+                },
+                $ = z.s = d.createElement(s),
+                e = d.getElementsByTagName(s)[0];
+            z.set = function(o) {
+                z.set._.push(o)
+            };
+            z._ = [];
+            z.set._ = [];
+            $.async = !0;
+            $.setAttribute("charset", "utf-8");
+            $.src = "https://v2.zopim.com/?4nGgkcgcwXT1xaX652O6enjzDtn1NxK8";
+            z.t = +new Date;
+            $.type = "text/javascript";
+            e.parentNode.insertBefore($, e)
+        })(document, "script");
+    </script>
+    <!--End of Zendesk Chat Script-->
+
+    <!--=============== javascript ===============-->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-101750467-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!--=============== javascript ===============-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#technologies-carusel").owlCarousel({
+                autoPlay: 1500,
+                stopOnHover: true,
+                pagination: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                items: 4,
+            });
+        })
+    </script>
+
+    <script text="text/javascript">
+        function topFunction() {
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+	 <!--=============== javascript slider handler ===============-->
 	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date(); a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-		ga('create', 'UA-101750467-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-
-
-	<!--=============== javascript - image carousel ===============-->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$("#technologies-carusel").owlCarousel({ autoPlay: 1500, stopOnHover: true, pagination: true, slideSpeed: 300, paginationSpeed: 400, items: 4, });
-		})
-	</script>
-	<!--=============== javascript - image carousel main page ===============-->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$("#intro-carusel").owlCarousel({ autoPlay: 1500, stopOnHover: true, pagination: true, slideSpeed: 300, paginationSpeed: 400, items: 1 });
-		})
-	</script>
-	<!--=============== javascript - bottom to top navigation ===============-->
-	<script text="text/javascript">
-		function topFunction() {
-			document.documentElement.scrollTop = 0;
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
 		}
-	</script>
+		
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
 </body>
 
 </html>
