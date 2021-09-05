@@ -4164,6 +4164,13 @@ h6 {
     border-width: 0px;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .start {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 959px) {
   .navigation {
     height: 50px;
