@@ -4117,8 +4117,8 @@ h6 {
 }
 .calendly-badge-widget {
   position: fixed !important;
-  right: auto !important;
-  left: 5px !important;
+  right: 195px !important;
+  left: auto !important;
   bottom: 0px !important;
   z-index: 9998 !important;
 }
@@ -4182,6 +4182,29 @@ h6 {
   }
   .actser:after {
     border-width: 0px;
+  }
+  .calendly-badge-widget {
+    position: fixed !important;
+    right: auto !important;
+    left: 5px !important;
+    bottom: 16px !important;
+    z-index: 9998 !important;
+    width: 44% !important;
+  }
+  .calendly-badge-content {
+    border-radius: 5px !important;
+    box-shadow: #ddd 0 -4px 5px;
+    /* border: 0.5px solid rgb(53, 51, 51) !important; */
+    background: #555555 !important;
+    color: #ffffff !important;
+    height: 30px !important;
+    font-size: 8px !important;
+  }
+  .calendly-badge-content span {
+    display: none !important;
+  }
+  .start {
+    display: none;
   }
 }
 @media only screen and (max-width: 959px) {
@@ -4538,7 +4561,7 @@ h6 {
     position: fixed !important;
     right: auto !important;
     left: 5px !important;
-    bottom: 0px !important;
+    bottom: 16px !important;
     z-index: 9998 !important;
     width: 44% !important;
   }
@@ -4553,6 +4576,9 @@ h6 {
   }
   .calendly-badge-content span {
     display: none !important;
+  }
+  .start {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 480px) {
