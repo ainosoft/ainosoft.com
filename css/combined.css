@@ -6,12 +6,10 @@
 @font-face {
   font-family: "FontAwesome";
   src: url("/fonts/fontawesome-webfont.eot?v=4.0.3");
-  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3")
-      format("embedded-opentype"),
+  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"),
     url("/fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"),
     url("/fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"),
-    url("/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular")
-      format("svg");
+    url("/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2376,8 +2374,7 @@ h6 {
   background: #f54f36 url(/images/close-white.png) no-repeat center;
 }
 .customNavigation a.btn:hover {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #f54f36,
-    0 0 0 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #f54f36, 0 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .triangle {
   border-color: transparent #f54f36 transparent transparent;
@@ -4118,6 +4115,29 @@ h6 {
   -moz-animation: spinAround 12s linear infinite;
   animation: spinAround 12s linear infinite;
 }
+.calendly-badge-widget {
+  position: fixed !important;
+  right: auto !important;
+  left: 5px !important;
+  bottom: 0px !important;
+  z-index: 9998 !important;
+}
+.calendly-badge-content {
+  border-radius: 5px !important;
+  box-shadow: #ddd 0 -4px 5px;
+  /* border: 0.5px solid rgb(53, 51, 51) !important; */
+  background: #555555 !important;
+  color: #ffffff !important;
+  height: 30px !important;
+  font-size: 12px !important;
+}
+.calendly-badge-content span {
+  display: none !important;
+}
+.meshim_widget_components_ChatButton.br .button_bar {
+  border: 3px solid #fff !important;
+  color: #000 !important;
+}
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
@@ -4443,8 +4463,7 @@ h6 {
   background: #3399db url(/images/close-white.png) no-repeat center;
 }
 .customNavigation a.btn:hover {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3399db,
-    0 0 0 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3399db, 0 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .ajl,
 .bigtext,
@@ -4514,6 +4533,26 @@ h6 {
     opacity: 0.8;
     width: 6px;
     height: 6px;
+  }
+  .calendly-badge-widget {
+    position: fixed !important;
+    right: auto !important;
+    left: 5px !important;
+    bottom: 0px !important;
+    z-index: 9998 !important;
+    width: 44% !important;
+  }
+  .calendly-badge-content {
+    border-radius: 5px !important;
+    box-shadow: #ddd 0 -4px 5px;
+    /* border: 0.5px solid rgb(53, 51, 51) !important; */
+    background: #555555 !important;
+    color: #ffffff !important;
+    height: 30px !important;
+    font-size: 8px !important;
+  }
+  .calendly-badge-content span {
+    display: none !important;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 480px) {
