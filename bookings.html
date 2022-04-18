@@ -1,322 +1,371 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    
     <style>
-* {
-  box-sizing: border-box;
-}
-body {
-  height: 95vh;
-  width: 98vw;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.card{
-  margin-bottom: -22px;
-    margin-top: 10%;
-    box-shadow: 0 15px 8px 0 rgb(0 0 0 / 30%);
-    padding: 16px;
-    text-align: center;
-    background-color: #F1F1F1;
-    border: 2px solid #009DDD;
-}
-.logo{
-  height: 10vh;
-    width: 8vw;
-        right: 12px;
-    position: absolute;
-    bottom: 3px;
-  }
-.one{
-  padding-top: 0%;
-    padding-block: 3%;
-    line-height: 1.5;
-}
-.second{
-  padding-block: 7%;
-    line-height: 2;
-}
-.third{
-  padding-block: 6.9%;
-    line-height: 2;
-}
-.fourth{
-  line-height: 2;
-    padding-block: 2.5%;
-}
-.fith{
-  padding-block: 3%;
-    line-height: 2;
-}
-p{
-  text-align: left;
-  padding-left: 5%;
-}
-h1{
-  text-align: center;
-  color:  #009DDD;
-  margin-top: 2%;
-}
-h2{
-  color: #EF9000;
-  text-align: center;
-}
-.textcolor{
-  text-align: center;
-  color: #EF9000;
-  font-size: 25px;
-  font-style: italic;
-}
-.bottom-text{
-  text-align: center;
-  color: #009DDD;
-  font-size: 30px;
-  margin-top: 3%;
-}
-/* .list{
-      font-size:100%;
-      margin-left:-6%;
-      text-align:left;
-} */
-.first{
-  float: left;
-    margin-top: -28%;
-    margin-left: -9%;
-}
-.two{
-  float: left;
-    margin-top: -28%;
-    margin-left: -9%;
-}
-.three{
-  float: left;
-    margin-top: -28%;
-    margin-left: -9%;
-}
-.four{
-  float: left;
-    margin-top: -28%;
-    margin-left: -9%;
-}
-.five{
-  float: left;
-    margin-top: -28%;
-    margin-left: -9%;
-}
-.column {
-  float: left;
-  width: 25%;
-  margin-top: 1%;
-  padding: 0px 10px;
-}
-.column1 {
-  margin-left: 38%;
-  width: 25%;
-  margin-top: 3%;
-  padding: 0px 10px;
-}
-.row {margin: 31px 80px;}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-button{
-  margin-left: 42%;
-}
-.Book-button {
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
-  border: 0;
-  border-radius: 12px;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 2.5;
-  outline: transparent;
-  padding: 5px 1rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-}
-.Book-button:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-.Book-button:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-}
-@media screen and (max-width: 780px) {
-  .row {margin: 20px -5px;}
-  .logo{
-    height: 10vh;
-    width: 40vw;
-    margin-left:29%;
-  }
-  h1{
-    text-align: center;
-    color:  #009DDD;
-  }
- .textcolor{
-    text-align: center;
-    color: #EF9000;
-    font-size: 20px;
-}
-.bottom-text{
-  text-align: center;
-  font-size: 25px;
-  margin-top: 15%;
-}
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-  .column1 {
-    margin-left: 0%;
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-.first{
-    float: left;
-    margin-top: -31%;
-    margin-left: -9%;
-}
-.two{
-    float: left;
-    margin-top: -31%;
-    margin-left: -9%;
-}
-.three{
-    float: left;
-    margin-top: -31%;
-    margin-left: -9%;
-}
-.four{
-    float: left;
-    margin-top: -31%;
-    margin-left: -9%;
-}
-.five{
-    float: left;
-    margin-top: -31%;
-    margin-left: -9%;
-}
-.list{
-    font-size: 95%;
-    text-align: center;
-}
-.Book-button{
-      margin-left: 18%;
-}
-}
-/* Style the counter cards */
-.card {
-  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #F1F1F1;
-}
-</style>
-  </head>
-  <body
-    background="assest/Background.jpg">
-    <h1>Technology audit to turnaround the value of your product</h1>
-    <p class="textcolor">and enable successful decision making</p>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <h2>Discover</h2>
-          <div class="first">
-            <img
-              src="assest/icons8-level-1-48.png"
-              />
-          </div>
-          <p class="list">
-            <p class="one">The good, the bad, the ugly of your product, codebase
-              and technology footprint.<br>
-              Development and support structure efficiency or lack of it.</p>
-          </p>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: DM Sans;
+            transition: all 0.3 linear;
+        }
+
+        .main{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .topnav{
+            background-color:#DEF0F9;
+            position: sticky;
+            z-index: 1;
+            top: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #009DDD;
+            margin-top: 0%;
+        }
+
+        .textcolor {
+            color: #EF9000;
+            font-size: 25px;
+            font-style: italic;
+            text-align:center;
+            margin-top: 1%;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            width: 270px;
+            height: 320px;
+            background-color: #ffff;
+            border-radius: 5px;
+            padding: 20px;
+            padding-top: 70px;
+            margin: 20px;
+            text-align: inherit; 
+            letter-spacing: 1px;
+            box-shadow: 0 10px 10px rgba(0,0,0,.3);
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+        }
+
+        .box1{
+            width: 270px;
+            height: 320px;
+            background-color: #ffff;
+            border-radius: 5px;
+            padding: 20px;
+            padding-top: 70px;
+            margin: 20px;
+            text-align: inherit; 
+            letter-spacing: 1px;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+            border: none;
+        }
+
+        .box h3{
+            font-size: 35px;
+            padding: 20px 0;
+            color: #EF9000;
+        }
+
+        .box p{
+            font-size:15px;
+            color:black;
+            line-height:1.2; 
+            margin-left: 2px;
+        }
+         
+        .box::before{
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .box1::before{
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .box::after{
+            width: 100%;
+            height: 100%;
+            background-color: #FBDA61;
+            background-image: linear-gradient(45deg, #80D0c7  0%,#0093E9 100%);
+            content:'';
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -2;
+            clip-path: circle(20% at 90% 10%);
+            transition: .2s;
+        }
+
+        .box1::after{
+            width: 100%;
+            height: 100%;
+            content:'';
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -2;
+            clip-path: circle(20% at 90% 10%);
+            transition: .2s;
+        }
+
+        .box .count{
+            position: absolute;
+            top: 15px;
+            right: 30px;
+            font-size: 50px;
+            font-weight: bolder;
+            color: #fff;
+        }
+
+        .box:nth-child(2)::after{
+            background-color: #0093E9;
+            background-image:linear-gradient(160deg,#0093E9 0%,#80D0c7 100%);
+        }
+
+        .box:nth-child(3)::after{
+            background-color: #0093E9;
+            background-image:linear-gradient(160deg,#0093E9 0%,#80D0c7 100%);
+        }
+
+        .box:nth-child(4)::after{
+            background-color: #0093E9;
+            background-image:linear-gradient(160deg,#0093E9 0%,#80D0c7 100%);
+        }
+
+        .box:nth-child(5)::after{
+            background-color: #0093E9;
+            background-image:linear-gradient(160deg,#0093E9 0%,#80D0c7 100%);
+        }
+
+        .box:hover::after{
+            clip-path: circle(100%);
+        }
+
+        .box:hover h3{
+            color: #fff;
+        }
+
+        .box:hover p{
+            color: #fff;
+        }
+
+        .bottom-text {
+            text-align: center;
+            color: #009DDD;
+            font-size: 22px;
+            margin-top: 5%;
+        }
+
+        .Book-button {
+            background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+            border: 0;
+            border-radius: 12px;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2.5;
+            outline: transparent;
+            padding: 0px 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            transition: box-shadow .2s ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+        }
+
+        .Book-button:not([disabled]):focus {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+        }
+
+        .Book-button:not([disabled]):hover {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+        }
+
+
+        button {
+            margin-left: 0%;
+            margin-top: 3%;
+        }
+
+        .logo {
+            height:auto;
+            width: 15vw;
+            margin-left:41%;
+            top:0;
+        }
+
+        @media screen and (max-width:768px) {
+
+        h1{
+                    text-align: center;
+                    color: #009DDD;
+        }
+            
+        .textcolor {
+                    color: #EF9000;
+                    font-size: 25px;
+                    font-style: italic;
+                    text-align:center;
+        }
+        .bottom-text {
+                    text-align: center;
+                    color: #009DDD;
+                    margin-top: -20%;
+                    font-size: 24px;
+
+        }
+
+        button {
+                    margin-left: 0%;
+                    margin-top: 3%;
+        }
+
+        .logo {
+                    height: auto;
+                    width: 22vw;
+                    margin-top: 4%;
+                    margin-left: 38%;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:1200px) {
+
+            h1{
+                    text-align: center;
+                    color: #009DDD;
+                }
+            
+        .textcolor {
+                    color: #EF9000;
+                    font-size: 25px;
+                    font-style: italic;
+                    text-align:center;
+        }
+        .bottom-text {
+                    text-align: center;
+                    color: #009DDD;
+                    margin-top: 1%;
+                    font-size: 27px;
+        }
+
+        button {
+                    margin-left: 0%;
+                    margin-top: 3%;
+        }
+
+        .logo {
+                    height: auto;
+                    width: 22vw;
+                    margin-top: 0%;
+                    margin-left: 38%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body background="Background.jpg">
+    
+    <div class="main">
+        <div class="topnav">
+            <a href="https://www.ainosoft.com/">
+                <img class="logo"
+                src="https://raw.githubusercontent.com/aino-monika/audit-page/c27fd5a5c231112d00459e78e852ca87984e35fd/assest/Ainosoft%20Logo.png" />
+            </a>
         </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <h2>Assess</h2>
-          <div class="two">
-            <img
-              src="assest/icons8-circled-2-c-48.png"
-              />
-          </div>
-          <p class="list">
-            <p class="second">Possibilities and challenges with your codebase<br>
-              Should we turn it around,refactor or replace</p>
-          </p>
+        
+        <h1>Technology audit to turnaround the value of your product</h1>
+        <p class="textcolor">and enable successful decision making</p>
+        
+        <div class="container">
+               
+            <div class="box">
+                    <h3><u>Discover</u></h3>
+                    <p>The good, the bad, the ugly of your product, codebase and technology footprint<br><br>
+                       Development and support structure efficiency or lack of it
+                    </p>
+                    <span class="count">1</span>
+                </div>
+                
+                <div class="box">
+                    <h3><u>Assess</u></h3>
+                    <p> Possibilities and challenges with your codebase<br><br>
+                        Should we turn it around, refactor or replace</p>
+                    <span class="count">2</span>
+                </div>
+                
+                <div class="box">
+                    <h3><u>Analyse</u></h3>
+                    <p>Are they any quick fixes in plain sight?<br><br>
+                       How can we turn it around if we choose to?</p>
+                    <span class="count">3</span>
+                </div>
+                
+                <div class="box">
+                    <h3><u>Report</u></h3>
+                    <p>Effort estimates needed for turnaround<br><br>
+                       Challenges-current and future<br><br>
+                       Value estimation</p>
+                    <span class="count">4</span>
+                </div>
+                
+                <div class="box">
+                    <h3><u>Decision</u></h3>
+                    <p>What direction should we move in next?<br><br>
+                       Next immediate must do steps<br><br>
+                       Short-term and mid-term strategies and activities</p>
+                    <span class="count">5</span>
+                </div>
+
+                <div class="box1">
+                    <p class="bottom-text">Have you thought of the value of a tech audit?<br>
+                    </p>
+                    <form action=" https://calendly.com/appops-vikram/tech-audit-consultation">
+                      <button class="Book-button" type="submit" value="Book a free Consultation">Book a free Consultation</button>
+                    </form>
+                </div>
+        
+            </div>
+    
         </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <h2>Analyse</h2>
-          <div class="three">
-            <img
-              src="assest/icons8-circled-3-c-48.png"
-              />
-          </div>
-          <p class="list">
-            <p class="third">Are they any quick fixes in plain sight?<br>
-              How can we turn it around if we choose to? </p>
-          </p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <h2>Report</h2>
-          <div class="four">
-            <img
-              src="assest/icons8-circled-4-c-48.png"
-              />
-          </div>
-          <p class="list">
-            <p class="fourth">Effort estimates needed for turnaround<br>
-              Challenges-current and future<br>
-              Value estimation</p>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column1">
-        <div class="card">
-          <h2>Decision</h2>
-          <div class="five">
-            <img
-              src="assest/circled-5.png"
-              />
-          </div>
-          <p class="list">
-            <p class="fith">What direction should we move in next?<br>
-              Next immediate must do steps<br>
-              Short team and mid term strategies and activities</p>
-          </p>
-        </div>
-      </div>
-      <div>
-        <p class="bottom-text">Have you thought of the value of a tech audit?<br>
-          If not,the time is now</p>
-        <form action="https://calendly.com/dpadhy/30min?">
-          <button class="Book-button" type="submit" value="Book a free
-            Consultation">Book a free Consultation</button>
-          <a href="index.html">
-            <img class="logo"
-              src="assest/Ainosoft%20Logo.png"
-              />
-          </a>
-        </form>
-      </div>
-    </body>
-  </html>
+</body>
+</html>
