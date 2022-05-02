@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: aliceblue;
+            position: fixed;
+            top: 0;
+            height: 60px;
+            width: 100%;
+        }
+
+
+        .hero-nav {
+            position: fixed;
+            top: 4rem;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            min-height: 105px;
+            background-image: url(https://raw.githubusercontent.com/aino-monika/privacy-policy-page/main/assest/building.jpg);
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .hero-nav .hero-nav__inner {
+            z-index: 1;
+        }
+
+        .hero-nav h1 {
+            color: beige;
+            font-size: 5vw;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .hero-nav:before {
+            content: "";
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: background 400ms;
+        }
+
+        .hero-nav.fixme:before {
+            background: rgb(0, 0, 0, 0.8);
+        }
+
+        img {
+            width: 16vw;
+            margin-left: 6%;
+            position: fixed;
+            top: 0%;
+        }
+
+        .page-content {
+            width: 50em;
+            font-size: 20px;
+            margin: 0 auto;
+            line-height: 1.625;
+            overflow: auto;
+            margin-top: 6%;
+            margin-bottom: 5%;
+            position: relative;
+            z-index: -1;
+        }
+
+        footer {
+            z-index: 1;
+            background: black;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background: #AFAFB6;
+        }
+
+        footer .content {
+            max-width: 1980px;
+            margin: auto;
+            padding: 20px 40px 40px 40px;
+        }
+
+        footer .content .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+
+        footer .content .link-boxes {
+            width: 100%;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+
+            margin-left: 0%;
+        }
+
+        footer .content .link-boxes .box {
+            width: calc(100% / 5 - 10px);
+        }
+
+        .input-box input[type="button"]:hover {
+            opacity: 1;
+        }
+
+        footer .bottom-details {
+            width: 100%;
+            background: gray;
+        }
+
+        footer .bottom-details .bottom_text {
+            max-width: 1980px;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+
+        .bottom-details .bottom_text span,
+        .bottom-details .bottom_text a {
+            font-size: 14px;
+            font-weight: 300;
+            color: #fff;
+            opacity: 0.8;
+            text-decoration: none;
+
+        }
+
+        .bottom-details .bottom_text a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .bottom-details .bottom_text a {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 1980px) {
+            footer .content .link-boxes {
+                flex-wrap: wrap;
+            }
+
+            footer .content .link-boxes .input-box {
+                width: 40%;
+                margin-top: 10px;
+            }
+
+            .page-content {
+                width: 50em;
+                font-size: 25px;
+                margin: 0 auto;
+                line-height: 1.625;
+                overflow: auto;
+                margin-top: 8%;
+                margin-bottom: 5%;
+                position: relative;
+                text-align: justify;
+                z-index: -1;
+            }
+
+            img {
+                width: 15vw;
+                margin-left: 1%;
+                margin-top: 0%;
+
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: aliceblue;
+                position: fixed;
+                top: 0;
+                height: 80px;
+                width: 100%;
+            }
+
+            .hero-nav h1 {
+                color: khaki;
+                font-size: 4vw;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+
+
+        @media (max-width: 1280px) {
+            footer .content .link-boxes {
+                flex-wrap: wrap;
+            }
+
+            footer .content .link-boxes .input-box {
+                width: 40%;
+                margin-top: 10px;
+            }
+
+            .page-content {
+                width: 37em;
+                font-size: 19px;
+                margin: 0 auto;
+                line-height: 1.625;
+                overflow: auto;
+                margin-top: 11%;
+                margin-bottom: 5%;
+                position: relative;
+                text-align: justify;
+                z-index: -1;
+            }
+
+            img {
+                width: 16vw;
+                margin-left: 1%;
+                margin-top: 0%;
+
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: aliceblue;
+                position: fixed;
+                top: 0;
+                height: 70px;
+                width: 100%;
+            }
+
+            .hero-nav h1 {
+                color: khaki;
+                font-size: 5vw;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        @media (max-width: 700px) {
+            footer {
+                position: relative;
+            }
+
+            footer .content .link-boxes .box {
+                width: calc(100% / 3 - 10px);
+            }
+
+            footer .content .link-boxes .input-box {
+                width: 60%;
+            }
+
+            .bottom-details .bottom_text span,
+            .bottom-details .bottom_text a {
+                font-size: 12px;
+            }
+
+            .page-content {
+                width: 25em;
+                font-size: 18px;
+                margin: 0 auto;
+                line-height: 1.625;
+                overflow: auto;
+                margin-top: 15%;
+                margin-bottom: 5%;
+                position: relative;
+                text-align: justify;
+                z-index: -1;
+            }
+
+            img {
+                width: 30vw;
+                margin-left: 1%;
+                margin-top: 2%;
+
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: aliceblue;
+                position: fixed;
+                top: 0;
+                height: 60px;
+                width: 100%;
+            }
+
+            .hero-nav h1 {
+                color: khaki;
+                font-size: 6vw;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        @media (max-width: 520px) {
+            footer::before {
+                top: 0px;
+            }
+
+            footer .content .top {
+                flex-direction: column;
+            }
+
+
+            footer .content .link-boxes .box {
+                width: calc(100% / 2 - 10px);
+            }
+
+            footer .content .link-boxes .input-box {
+                width: 100%;
+            }
+
+            .page-content {
+                width: 20em;
+                font-size: 16px;
+                margin: 0 auto;
+                line-height: 1.625;
+                overflow: auto;
+                margin-top: 15%;
+                margin-bottom: 5%;
+                position: relative;
+                text-align: initial;
+                z-index: -1;
+            }
+
+            img {
+                width: 30vw;
+                margin-left: 1%;
+                margin-top: 2%;
+
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: aliceblue;
+                position: fixed;
+                top: 0;
+                height: 60px;
+                width: 100%;
+            }
+
+            .hero-nav h1 {
+                color: khaki;
+                font-size: 10vw;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero-nav">
+        <div class="navbar">
+            <span><img
+                    src="https://raw.githubusercontent.com/aino-monika/privacy-policy-page/main/assest/Ainosoft%20Logo.png"></span>
+        </div>
+        <div class="hero-nav__inner">
+            <h1>Privacy Policy</h1>
+            <div class="hero-nav__button">
+                <a href="#" class="btn"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var heroShinker = function () {
+            var hero = $('.hero-nav'),
+                heroHeight = $('.hero-nav').outerHeight(true);
+            $(hero).parent().css('padding-top', heroHeight);
+            $(window).scroll(function () {
+                var scrollOffset = $(window).scrollTop();
+                if (scrollOffset < heroHeight) {
+                    $(hero).css('height', (heroHeight - scrollOffset));
+                }
+                if (scrollOffset > (heroHeight - 215)) {
+                    hero.addClass('fixme');
+                } else {
+                    hero.removeClass('fixme');
+                };
+            });
+        }
+        heroShinker();
+    </script>
+
+    <div class="page-content">
+        <h1><b>Privacy Notice</b></h1>
+        <h3><b>Personal Information</b></h3>
+        <h3>Last Updated: April 13, 2022</h3>
+        <p>
+            Please email us at <a>info@ainosoft.com</a> with any questions about this Policy.
+        </p>
+        <p>
+            AinoSoft takes your privacy seriously.
+            Our goal is to deliver a great experience while protecting your privacy.
+            This privacy notice discloses the privacy practices specifically for Ainosoft.com.
+            This privacy notice also applies solely to information collected by the website.
+        </p>
+        <p>
+            We will notify you of the following:
+        <ul>
+            <li>What personally identifiable information is collected from you through the website, how it is used
+                and with
+                whom it may be shared.</li>
+            <li>What choices are available to you regarding the use of your data.</li>
+            <li>The security procedures in place to protect the misuse of information.</li>
+            <li>How you can correct any inaccuracies in the information.</li>
+        </ul>
+        </p>
+
+        <h3><b>Information Collection, Use, and Sharing</b></h3>
+        <p>
+            We are the sole owners of the information collected on this site. We only have access to/collect
+            information
+            that you voluntarily give us via email or other direct contact from you.
+            We will not sell or rent this information to anyone.<br>
+
+            We will use your information to respond to you, regarding the reason you contacted us.
+            We will not share your information with any third party outside of our organization, other than as
+            necessary to
+            fulfill your request.<br>
+
+            Unless you ask us not to, we may contact you via email in the future to inform you about new products or
+            services, promotions, or changes to this privacy policy.
+        </p>
+
+        <h3><b>Your Access to and Control over Information</b></h3>
+        <p>You may opt out of any future contacts from us at any time.
+            You can do the following at any time by contacting us at <a>info@ainosoft.com</a> or via the phone number
+            given
+            on our
+            website:
+
+        <ul>
+            <li>See what data we have about you, if any.</li>
+            <li>Change/correct any data we have about you.</li>
+            <li>Have us delete any data we have about you.</li>
+            <li>Express any concern you have about our use of your data.</li>
+        </ul>
+        </p>
+
+        <h3><b>SECURITY</b></h3>
+        <p>We take precautions to protect your information. When you submit information via the website, your
+            information
+            is protected both online and offline.
+
+            Our website is encrypted. What this means is: for any information that is collected, we encrypt and
+            transmit
+            that information from you to us in a secure way. You can verify this by looking for a lock icon in the
+            address
+            bar of your browser and looking for “https” at the beginning of the address of the Web page.
+        </p>
+
+        <h3><b>REGISTRATION</b></h3>
+        <p>In order to use certain areas of this website, you may be asked to complete a registration or contact
+            form.
+            During this process, you will be asked to give certain information (such as your name and email
+            address).
+            This information is used to contact you about the products/services on our site in which you have
+            expressed
+            interest.
+        </p>
+
+        <h3><b>COOKIES</b></h3>
+        <p>We use “cookies” on this site.
+            A cookie is a piece of data stored on a visitor’s hard drive to help us improve your access to our site
+            and to
+            identify repeat visitors to our site.
+            Cookies can also enable us to track and target the interests of our users to enhance the experience on
+            our site.
+            Usage of a cookie is in no way linked to any personally identifiable information on our site.
+        </p>
+
+        <h3><b>BUSINESS PARTNERS</b></h3>
+        <p>From time to time, we partner with other business partners to provide specific services.
+            When you sign up for these services, we will share names, or other contact information that is necessary
+            for the
+            third party to provide these services.
+            These parties are not allowed to use personally identifiable information except for the purpose of
+            providing
+            these services.
+        </p>
+
+        <h3><b>LINKS</b></h3>
+        <p>Our website may contain links to other sites.
+            Please be aware that we are not responsible for the content or privacy practices of such other sites.
+            We encourage our users to be aware when they leave our site and to read the privacy statements of any
+            other site
+            that collects personally identifiable information.
+        </p>
+
+        <h3><b>SURVEYS & CONTESTS</b></h3>
+        <p>
+            From time-to-time our site requests information via surveys or contests.
+            Participation in these surveys or contests is completely voluntary and you may choose whether or not to
+            participate and therefore disclose this information.
+            Information requested may include contact information (such as name and shipping address), and
+            demographic
+            information (such as zip code, age level).
+            Contact information will be used to notify the winners and award prizes. Survey information will be used
+            for
+            purposes of monitoring or improving the use and satisfaction of this site.
+        </p>
+
+        <h3><b>RESPONSIBLE PARTY</b></h3>
+        <p>
+            Ainosoft* (“we”, “us” or “Ainosoft”) is an IT services and consulting organization focused on building
+            and
+            delivering next-gen technology solutions.
+            Our customers, consumers, prospects, registered users, applicants for employment, and others with whom
+            we do
+            business entrust us with their personal data and personally identifiable information (“Personal
+            Information”)
+            and they expect us to protect that Personal Information with the same level of care we do on our own.
+            This is fundamental to the way we do business.
+        </p>
+
+        <h3><b>CHANGES TO THE POLICY</b></h3>
+        <p>
+            We may make changes to the policy from time to time.
+            If we make any change to this policy,
+            we will change the “Last Updated” date above.
+            You agree that the continued use of our service after such changes have been published to our services
+            will
+            constitute to your acceptance of such revised policy.
+        </p>
+    </div>
+
+
+
+
+    <footer>
+        <div class="content">
+            <div class="link-boxes">
+                <ul>
+                    <i class="fa fa-home" style="font-size:32px"></i>
+                    1 Hallidie Plaza 2nd Floor,<br>
+                    CA 94102
+                    San Francisco<br>
+                    +1 415 944 1836
+
+                </ul>
+
+                <ul class="address">
+                    <i class="fa fa-home" style="font-size:32px"></i>
+                    3rd Floor, Gulmohar Court,<br>
+                    Lane B, Koregaon Park,<br>
+                    Pune, Maharashtra 411001<br>
+                    India
+                    +91 9359232592
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text"><a href="https://ainosoft.com/">AinoSoft</a>©2014 - 2022 All rights
+                    reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
